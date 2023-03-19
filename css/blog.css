@@ -1,0 +1,35 @@
+#blog {
+  padding: 50px 0 100px 0;
+}
+
+.blog-post {
+  padding: 50px 100px 0px 100px;
+}
+@media screen and (max-width: 768px) {
+  .blog-post {
+    padding: 40px 40px 0px 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog-post {
+    padding: 20px 10px 0px 10px;
+  }
+}
+
+.poster-img img {
+  border-radius: 50%;
+  max-width: 55px;
+  max-height: 55px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.poster-name {
+  color: #592ea9;
+}
+
+.blog-image {
+  max-height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=blog.css.map */

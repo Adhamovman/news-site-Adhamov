@@ -1,0 +1,17 @@
+#home {
+  background-color: #f4f0f8;
+  padding: 80px 0;
+}
+
+#blogs {
+  padding: 40px 0 80px 0;
+}
+
+.home-desc {
+  max-width: 500px;
+}
+
+.blogs-row .card {
+  border: 0;
+  border-radius: 0;
+}/*# sourceMappingURL=category.css.map */

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My posts</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Sen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/myposts.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav
+        class="navbar navbar-expand-lg"
+        aria-label="Offcanvas navbar large"
+        id="header_navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img src="./images/header-logo.png" alt=""
+          /></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+          >
+            <img src="/images/menu-btn.svg" alt="" />
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                Adhamov's Portfolio
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-dark"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav justify-content-end flex-grow-1 pe-3 mb-3 mb-lg-0 me-lg-5"
+              >
+                <li class="nav-item mx-2">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="register.html">Register</a>
+                </li>
+              </ul>
+              <a
+                href="login.html"
+                class="btn-main btn_login d-inline-block text-center"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="myposts">
+        <div class="container">
+          <div class="d-flex justify-content-between align-content-center py-5">
+            <h2 class="main-h">My posts</h2>
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#post-modal"
+              id="modal-open-btn"
+              class="btn-main"
+            >
+              Add post
+            </button>
+          </div>
+          <div class="separator pb-5"></div>
+          <input
+          type="search"
+          class="w-100 p-2 search main-p mb-5"
+          placeholder="Searching..."
+        />
+          <div class="my-posts-row">
+            <div class="card my-4">
+                <div class="row g-0">
+                  <div class="col-sm-4">
+                    <img
+                      src="images/blog-card.png"
+                      class="img-fluid h-100 w-100 object-fit-cover"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body pt-0 ps-0 ps-sm-4 mt-3 mt-sm-0">
+                      <p class="huge-p">Business</p>
+                      <h5 class="card-h">Design tips for designers that cover everything you need</h5>
+                      <p class="main-p mt-3 ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <nav aria-label="pagination" class="d-flex justify-content-center pt-5">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <span class="page-link pagination-text"> < Prev</span>
+              </li>
+              <li class="page-item"><a class="page-link pagination-text" href="">1</a></li>
+              <li class="page-item active">
+                <span class="page-link pagination-text">2</span>
+              </li>
+              <li class="page-item"><a class="page-link pagination-text" href="#">3</a></li>
+
+              <li class="page-item"><a class="page-link pagination-text" href="">1</a></li>
+              <li class="page-item">
+                <span class="page-link pagination-text">2</span>
+              </li>
+              <li class="page-item"><a class="page-link pagination-text" href="#">3</a></li>
+
+              <li class="page-item"><a class="page-link pagination-text" href="">1</a></li>
+              <li class="page-item">
+                <span class="page-link pagination-text">2</span>
+              </li>
+              <li class="page-item"><a class="page-link pagination-text" href="#">3</a></li>
+              <li class="page-item"><a class="page-link pagination-text" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link pagination-text" href="#">Next ></a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="modal fade" tabindex="-1" id="post-modal">
+            <form id="postForm" class="g-3 needs-validation" novalidate>
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Add post</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="post" class="form-label">Heading</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="post"
+                        placeholder="Heading"
+                        required
+                      />
+                      <div class="valid-feedback">
+                        Rahmat to'ldirganingiz uchun !
+                      </div>
+                      <div class="invalid-feedback">Iltimos to'ldiring !</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="post" class="form-label">Hashtags</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="hashtag"
+                        placeholder="Hashtags"
+                        required
+                      />
+                      <div class="valid-feedback">
+                        Rahmat to'ldirganingiz uchun !
+                      </div>
+                      <div class="invalid-feedback">Iltimos to'ldiring !</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="postUrl" class="form-label">Url</label>
+
+                      <textarea
+                        cols="30"
+                        rows="5"
+                        type="text"
+                        class="form-control"
+                        id="postUrl"
+                        placeholder="Post text"
+                        required
+                      ></textarea>
+                      <div class="valid-feedback">
+                        Rahmat to'ldirganingiz uchun !
+                      </div>
+                      <div class="invalid-feedback">Iltimos to'ldiring !</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="postImage" class="form-label"
+                        >Post Image</label
+                      >
+                      <input
+                        type="file"
+                        id="postImage"
+                        class="form-control"
+                        placeholder="Post Image"
+                        required
+                      />
+                      <div class="valid-feedback">
+                        Rahmat to'ldirganingiz uchun !
+                      </div>
+                      <div class="invalid-feedback">Iltimos to'ldiring !</div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button
+                      type="submit"
+                      id="post-add-btn"
+                      class="btn btn-primary"
+                    >
+                      Add post
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer-desc">
+          <p class="main-p m-0">Finstreet 118 2561 Fintown</p>
+          <p class="main-p m-0">Hello@finsweet.com 020 7993 2905</p>
+        </div>
+        <div class="socials d-flex gap-2">
+          <a href="#">
+            <img src="images/logo-facebook.png" alt="facebook" />
+          </a>
+          <a href="#"> <img src="images/logo-tweet.png" alt="twetter" /> </a>
+          <a href="#"> <img src="images/logo-insta.png" alt="instagram" /> </a>
+          <a href="#"> <img src="images/logo-in.png" alt="linked in" /> </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myposts.js"></script>
+  </body>
+</html>

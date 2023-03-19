@@ -1,0 +1,31 @@
+.our-situation {
+  background-color: #f4f0f8;
+}
+#mision {
+  margin: 50px 0 100px 0;
+}
+.united-shape {
+  top: 100px;
+  left: -30px;
+  max-width: 80px;
+}
+.why-shape {
+  bottom: -30px;
+  left: 110px;
+  max-width: 80px;
+}
+#aboutwhy,
+#aboutus {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 578px) {
+  .united-shape,
+  .why-shape {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .creativity-img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+.register-form {
+  max-width: 800px;
+  width: 100%;
+}
+
+.form-location {
+  display: flex;
+  justify-content: center;
+}
+
+#register {
+  padding: 70px 0 100px 0;
+}/*# sourceMappingURL=register.css.map */

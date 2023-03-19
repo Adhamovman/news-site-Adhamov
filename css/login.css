@@ -1,0 +1,13 @@
+.login-form {
+  max-width: 800px;
+  width: 100%;
+}
+
+.form-location {
+  display: flex;
+  justify-content: center;
+}
+
+#login {
+  padding: 70px 0 110px 0;
+}/*# sourceMappingURL=login.css.map */
